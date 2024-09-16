@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #content {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .title-overlay {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 100px;
+            /*font-weight: bold;*/
+            z-index: 2;
+            /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);*/
+            opacity: 30%;
+        }
+        
+        .text-overlay {
+            color: black;
+            padding: 20px;
+            padding-top: 700px;
+            font-size: 18px;
+            max-width: 80%;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .text-overlay p {
+            font-size: 20px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #256fdb;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <!-- Title at the top -->
+        <div class="title-overlay">Your Name</div>
+
+        <img src="images/your-name-kimi-no-na-wa--20918.jpg" alt="Your Name movie poster" class="background-image">
+
+        <div class="text-overlay">
+            <p>
+                Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things become even more complicated when the boy and girl decide to meet in person. Mitsuha, a high school girl in a rural town, wishes to escape her mundane life. Taki, a high school boy living in Tokyo, struggles with the chaos of city life. One day, they begin to mysteriously switch bodies, leaving notes for each other as they experience one another's lives. As they grow closer, they uncover a deeper connection and a looming disaster that will force them to fight together.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <span> Coded by <a href="https://github.com/kylajane-sona/Your-Name-.git" target="_blank">Kyla Jane L. Sona</a> and is open-source.</span>
+    </footer>
+</body>
+</html>
